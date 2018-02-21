@@ -1,7 +1,9 @@
 import React from 'react';
 
 export default () => <div>
-  <h3>Know Your Educational Rights</h3>
-  <h4>Register</h4>
+<div className="headline">
+  <h1>Know Your Educational Rights</h1>
+  <button className="btn btn-primary button">REGISTER</button><br/>
   <h4>Map</h4>
+ </div>
 </div>

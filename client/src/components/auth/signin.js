@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import * as actions from '../../actions';
+//import Background from '../img/class.jpg';
 
 class Signin extends Component {
   handleFormSubmit({email, password }){
@@ -26,7 +27,7 @@ class Signin extends Component {
       <div className="login">
       <title>KYER Sign In</title>
         <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-        <h3>Start Making a Difference in Your Education Today!</h3>
+        <h3>Stand Up and Fight for Educational Rights!</h3>
           <fieldset className="form-group">
             <label></label>
             <input {...email} className="form-control" placeholder="Email" />
@@ -36,11 +37,12 @@ class Signin extends Component {
             <input {...password} type="password" className="form-control" placeholder="Password"/>
           </fieldset>
           { this.renderAlert()}
-        <button action="submit" className="btn btn-primary">SIGN IN</button>
+        <button action="submit" className="btn btn-primary button">SIGN IN</button>
         <h4>OR</h4>
-        <button className="btn btn-primary">  REGISTER  </button><br/>
-        <a href="#" className="fa fa-facebook"/><a href="#" className="fa fa-facebook"/><a href="#" className="fa fa-facebook"/><a href="#" className="fa fa-facebook"/>
-        <h4>Already have an account? <a href="">Log In.</a></h4>
+        <button className="btn btn-primary button">REGISTER</button><br/>
+        <h3>Right of the Day</h3>
+        <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+
       </form>
     </div>
     );
